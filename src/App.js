@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Grid } from "@mui/material";
+import TableComp from "./component/MiniComp/TableComp";
+import SignUp from "./component/SignUp/SignUpRightPage";
+// import LoginPage from "./component/LoginPage";
+import LoginPage from "./component/Login/LoginPage"
+import SignUpRightPage from "./component/SignUp/SignUpRightPage";
+import SignUpPage from "./component/SignUp/SignUpPage";
+import Payment from "./component/Payment/Payment";
+import PaymentRightPage from "./component/Payment/PaymentRightPage";
+import PaymentMain from "./component/Payment/PaymentMain";
+import History from "./component/History/History";
+
 
 function App() {
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <SignUpPage /> */}
+      {/* <Payment /> */}
+      {/* <PaymentRightPage/> */}
+       {/* <PaymentMain /> */}
+      <History />
+    </>
   );
 }
 
