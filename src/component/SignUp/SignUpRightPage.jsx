@@ -4,6 +4,7 @@ import React from "react";
 import UploadBtn from "../MiniComp/UploadBtn";
 import SelectInp from "../MiniComp/SelectInp";
 import Radio from "../MiniComp/Radio";
+import SignupTextField from "./SignupTextField";
 
 function SignUpRightPage() {
 
@@ -19,34 +20,48 @@ function SignUpRightPage() {
                             <Typography sx={{fontWeight:600,color:" #656565"}} variant="h6" >User Details</Typography>
                         </Stack>
                         <Grid container spacing={2} sx={{marginTop:"0.1rem"}}>
-                            <Grid item md={4} sm={6} >
-                                <Stack sx={{ width: "full" }}>
-                                    <TextField required  size="small" id="outlined-required" label="Name"  />
+                            <Grid item md={4} sm={6}>
+                                <Stack sx={{ width: "full", paddingX :"1rem" }}>
+                                    {/* <TextField InputLabelProps={{
+                                        style:{fontSize:"13px", padding:"2px 3px" }
+                                    }}
+                                    inputProps={{
+                                        style:{
+                                            height:"17px", 
+                                            
+                                        }
+                                    }} required  size="small" id="outlined-required" label="Name"  /> */}
+                                    <SignupTextField label={"Name"} />
                                 </Stack>
                             </Grid>
                             <Grid item md={4} sm={6}>
-                                <Stack sx={{ width: "full" }}>
-                                    <TextField required size="small" id="outlined-required" label="Email"  />
+                                <Stack sx={{ width: "full", paddingX :"1rem" }}>
+                                    <SignupTextField label={"Email"} />
+                                    {/* <TextField required size="small" id="outlined-required" label="Email"  /> */}
                                 </Stack>
                             </Grid>
                             <Grid item md={4} sm={6}>
-                                <Stack sx={{ width: "full" }}>
-                                    <TextField required size="small" id="outlined-required" label="Username"  />
+                                <Stack sx={{ width: "full", paddingX :"1rem"  }}>
+                                    <SignupTextField label={"Username"} />
+                                    {/* <TextField required size="small" id="outlined-required" label="Username"  /> */}
                                 </Stack>
                             </Grid>
                             <Grid item md={4} sm={6}>
-                                <Stack sx={{ width: "full" }}>
-                                    <TextField required size="small" id="outlined-required" label="Gender"  />
+                                <Stack sx={{ width: "full", paddingX :"1rem" }}>
+                                    <SignupTextField label={"Gender"} />
+                                    {/* <TextField required size="small" id="outlined-required" label="Gender"  /> */}
                                 </Stack>
                             </Grid>
                             <Grid item md={4} sm={6}>
-                                <Stack sx={{ width: "full" }}>
-                                    <TextField required size="small" id="outlined-required" label="Birth Date"  />
+                                <Stack sx={{ width: "full", paddingX :"1rem" }}>
+                                    {/* <TextField required size="small" id="outlined-required" label="Birth Date"  /> */}
+                                    <SignupTextField label={"Birth Date"} />
                                 </Stack>
                             </Grid>
                             <Grid item md={4} sm={6}>
-                                <Stack sx={{ width: "full" }}>
-                                    <TextField required size="small" id="outlined-required" label="Designation"  />
+                                <Stack sx={{ width: "full", paddingX :"1rem"  }}>
+                                    <SignupTextField label={"Designation"} />
+                                    {/* <TextField required size="small" id="outlined-required" label="Designation"  /> */}
                                 </Stack>
                             </Grid>
                         </Grid>

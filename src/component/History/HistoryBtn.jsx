@@ -4,15 +4,13 @@ import ButtonComp from "../MiniComp/ButtonComp";
 
 function HistoryBtn({
     label,
-    width,
-    boxWidth
+    padding,
+    backgroundColor
 }){
 
 return(
     <>
-        {/* <Box sx={{width:{boxWidth}}}> */}
-            <ButtonComp label={label} color={"black"} fontSize={"0.7rem"} width={width}/>
-        {/* </Box> */}
+            <ButtonComp backgroundColor={"white"}  label={label} width={"100%"}   color={"black"} smFontSize={"0.68rem"} mdFontSize={"0.7rem"} lgFontSize={"0.75rem"} padding={padding}/>
     </>
 )
 }

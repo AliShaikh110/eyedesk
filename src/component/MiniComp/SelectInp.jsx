@@ -5,7 +5,14 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
 export default function SelectAutoWidth({
-  selectInpLabel
+  selectInpLabel,
+  height,
+  paddingTop,
+  labelSpace="Select",
+  bgcolor,
+  mdFontSize,
+  lgFontSize,
+  width
 }) {
   const [age, setAge] = React.useState('');
 
@@ -16,15 +23,19 @@ export default function SelectAutoWidth({
   return (
     <div>
       <FormControl sx={{ minWidth: "100%" }}>
-        <InputLabel size='small' id="demo-simple-select-autowidth-label">{selectInpLabel}</InputLabel>
+        <InputLabel sx={{width:"100%",fontSize:{md:mdFontSize, lg:lgFontSize}}}size='small' id="demo-multiple-name-label" >{selectInpLabel}</InputLabel>
         <Select
           labelId="demo-simple-select-autowidth-label"
           id="demo-simple-select-autowidth"
           value={age}
           onChange={handleChange}
           autoWidth
-          label="Age"
-          size='small'
+          label={labelSpace}
+          size='small' 
+          sx={{bgcolor:bgcolor,minWidth:"0px", width:{width}}}
+          
+          
+          
         >
           <MenuItem value="">
             <em>None</em>

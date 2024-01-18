@@ -1,5 +1,6 @@
 import { Button } from "@mui/material";
 import zIndex from "@mui/material/styles/zIndex";
+import { hover } from "@testing-library/user-event/dist/hover";
 import React from "react";
 
 function ButtonComp({
@@ -8,16 +9,41 @@ function ButtonComp({
     borderRadius,
     fontSize,
     fontWeight,
-    color
+    color,
+    onClick,
+    height = "100%",
+    padding,
+    minWidth,
+    margin,
+    mdFontSize,
+    lgFontSize,
+    smFontSize,
+    backgroundColor,
+    startIcon,
+    endIcon,
+    hover
 }){
 
 return(
     <>
         {/* <Button  sx={{width:{width}, borderRadius:{borderRadius}, fontSize:{fontSize}, }} variant="contained">{label}</Button> */}
-        <Button  sx={{width:{width}, borderRadius:{borderRadius}, fontSize:{fontSize}, height:"100%",fontWeight:{fontWeight}, bgcolor:"white",color:{color}
+        <Button 
+            startIcon={startIcon}
+            endIcon={endIcon} 
+            sx={{width:{width}, 
+            minWidth:{minWidth},
+            borderRadius:{borderRadius},
+            fontSize:{md:mdFontSize, lg:lgFontSize, sm:smFontSize},
+            height:{height},
+            fontWeight:{fontWeight},
+            bgcolor:{backgroundColor},
+            color:{color},
+            padding:{padding},
+            margin:{margin},
+            "&:hover":{backgroundColor:hover},
+            // "&:active":{color:"white"},
         
-//   clipPath: 'polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%)'
-         }} variant="contained" >{label}</Button>
+        }}  variant="contained" onClick={onClick} >{label}</Button>
     </>
 )
 }

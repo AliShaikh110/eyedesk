@@ -2,6 +2,7 @@ import React from "react";
 import SignUpLeftPage from "./SignUpLeftPage";
 import { Grid } from "@mui/material";
 import SignUpRightPage from "./SignUpRightPage";
+import { AutoRefractionAr } from "../../Refraction/SecondaryLayout";
 
 function SignUpPage() {
 
@@ -15,6 +16,14 @@ function SignUpPage() {
                 <Grid item sm={12} md={7.3}>
                     <SignUpRightPage />
 
+                </Grid>
+            </Grid>
+            <Grid container>
+            <Grid item md={6}>
+                    <AutoRefractionAr />
+                </Grid>
+                <Grid item md={6}>
+                    <AutoRefractionAr />
                 </Grid>
             </Grid>
         </>

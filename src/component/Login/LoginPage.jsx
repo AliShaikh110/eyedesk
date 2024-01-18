@@ -5,8 +5,8 @@ import eyeDesk from "../../images/eyeDesk.png"
 function LoginPage(){
 
 return(
-    <Box sx={{width:"100%",display:"flex",flexDirection:"row",justifyContent:"center"}}>
-    <Box sx={{width:"50%",height:"100vh",bgcolor:"#F5F5F5",paddingX:"1.5rem",borderRadius:"1rem"}}>
+    <Box sx={{width:"100%",height:"100vh",display:"flex",flexDirection:"row",justifyContent:"center"}}>
+    <Box sx={{width:"50%",bgcolor:"#F5F5F5",paddingX:"1.5rem",borderRadius:"1rem"}}>
         <Stack flexDirection={"row"} justifyContent={"end"} sx={{width:"100%",marginTop:"1rem"}} >
             <Typography color={"#1757C2"} sx={{fontSize:"0.9rem",letterSpacing:"-0.02rem",fontWeight:"500"}}>Need help?</Typography>
         </Stack>
