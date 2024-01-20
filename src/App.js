@@ -23,6 +23,7 @@ import SignupTextField from "./component/SignUp/SignupTextField";
 import SphPositive from "./component/Sph/SphPositive";
 import { FourColLayout } from "./Refraction/PrimaryLayout";
 import { VisualAcuityV3 } from "./Refraction/UiLayout";
+import { Refraction } from "./RefractionComponent/Main";
 
 
 
@@ -56,7 +57,8 @@ function App() {
       {/* <UcvaMain /> */}
       {/* <SecondUcva /> */}
       {/* <FourColLayout /> */}
-      <VisualAcuityV3 />
+      {/* <VisualAcuityV3 /> */}
+      <Refraction />
       
       
     </>
