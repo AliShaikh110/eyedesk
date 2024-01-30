@@ -11,6 +11,7 @@ export function UcvaFirstMaping() {
     
     const onSet = (params) => {
         setValue(params);
+        console.log((params));
     }
     
     return (

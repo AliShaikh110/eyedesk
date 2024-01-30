@@ -17,8 +17,6 @@ export  function ContrastSensiMaping() {
         setValue(params);
     }
 
-    console.log(value);
-
     return (
         <>
             <Grid container spacing={"0.1rem"}>

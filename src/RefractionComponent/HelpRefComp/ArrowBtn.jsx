@@ -10,14 +10,15 @@ export default function ArrowBtn({
     lgFontSize="0.85rem",
     smFontSize="0.8rem",
     backgroundColor="#1976d2",
-    hover
+    hover,
+    onClick
     
 
     }){
 
 return(
     <>
-        <ButtonComp hover={hover} backgroundColor={backgroundColor} smFontSize={smFontSize} mdFontSize={mdFontSize} lgFontSize={lgFontSize} label={label} startIcon={startIcon} endIcon={endIcon}height={"auto"}   padding={padding} borderRadius={"0.75rem"} minWidth={0}/>
+        <ButtonComp  onClick={onClick} hover={hover} backgroundColor={backgroundColor} smFontSize={smFontSize} mdFontSize={mdFontSize} lgFontSize={lgFontSize} label={label} startIcon={startIcon} endIcon={endIcon}height={"auto"}   padding={padding} borderRadius={"0.75rem"} minWidth={0}/>
     </>
 )
 }

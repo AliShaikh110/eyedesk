@@ -9,15 +9,15 @@ export function DryRefraction() {
 
     return (
         <>
-            <Grid container rowSpacing={"1.5rem"} columnSpacing={"0.5rem"} paddingTop={"0.6rem"} paddingBottom={"1rem"}>
-                <Grid item sm={12} md={12} >
+            <Grid container rowSpacing={"1.5rem"} columnSpacing={"0.5rem"} paddingTop={"0.6rem"} paddingBottom={"2.5rem"}>
+                {/* <Grid item sm={12} md={12} >
                     <ArrowBtn hover={"green"} backgroundColor={"rgba(2, 184, 1, 1)"}  mdFontSize={"0.85rem"} lgFontSize={"0.9rem"} label={"Dry Refraction (ARx)"} endIcon={<ForwardIcon />} />
 
-                </Grid>
+                </Grid> */}
 
                 <Grid item md={12} sm={12}>
                     <Grid container >
-                        <Grid item sm={1.5} md={1.5}>
+                        <Grid item sm={1.5} md={1.8} lg={1.5}>
                             <Box marginBottom={"0.6rem"}>
                                 <Box sx={{ width: "100%" }} className="myBtn" >
                                     <ArrowBtn label={"Fill"} padding={"0.05rem 0.3rem"} mdFontSize={"0.7rem"} endIcon={<ForwardIcon style={{ marginLeft: "2px", fontSize: "large" }} />} />
@@ -30,7 +30,7 @@ export function DryRefraction() {
                             </Box>
                         </Grid>
 
-                        <Grid item sm={10.5} md={10.5}>
+                        <Grid item sm={10.5} md={10.2} lg={10.5}>
                             <FiveColInpTable inpLabel={"Dry"} />
                         </Grid>
                     </Grid>

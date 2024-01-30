@@ -8,7 +8,7 @@ import ForwardIcon from '@mui/icons-material/Forward';
 function Retinoscopyy() {
   return (
     <>
-      <Box paddingTop={"0.6rem"} paddingBottom={"1rem"}>
+      <Box paddingTop={"0.6rem"} paddingBottom={"2.5rem"}>
 
       
       <Box
@@ -19,9 +19,9 @@ function Retinoscopyy() {
 
         <Box width={"100%"}>
           <Grid container>
-            <Grid item sm={12} md={12} >
+            {/* <Grid item sm={12} md={12} >
               <ArrowBtn hover={"green"} backgroundColor={"rgba(2, 184, 1, 1)"} mdFontSize={"0.85rem"} lgFontSize={"0.9rem"} label={"CONTRAST SENSITIVITY"} endIcon={<ForwardIcon />} />
-            </Grid>
+            </Grid> */}
           </Grid>
           <Grid container marginTop={"1rem"}>
             <Grid item sm={1.5} md={1.5}></Grid>
