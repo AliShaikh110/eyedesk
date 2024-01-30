@@ -152,7 +152,6 @@ export function RefractionDilated() {
                             </Box>
                             <Box className="myBtn">
                                 <ArrowBtn label={"Copy"} padding={"0.05rem 0.3rem"} mdFontSize={"0.7rem"} endIcon={<ForwardIcon style={{ paddingLeft: "-1rem", fontSize: "1.1rem" }} />} />
-                            {/* <ArrowBtn label={"Copy"} padding={"0px 7px"} endIcon={<ForwardIcon />} /> */}
                             </Box>
                             
                         </Grid>
@@ -190,13 +189,10 @@ export function Pgp1() {
                         <Grid item sm={1.5} md={1.5}>
                         <Box className="myBtn" marginBottom={"0.5rem"}>
                                 <ArrowBtn label={"Fill"} padding={"0.05rem 0.3rem"} mdFontSize={"0.7rem"} endIcon={<ForwardIcon style={{ paddingLeft: "-1rem", fontSize: "1.1rem" }} />} />
-                                {/* <ArrowBtn label={"Fill"} padding={"0px 7px"} endIcon={<ForwardIcon />} /> */}
                             </Box>
                             <Box className="myBtn">
                                 <ArrowBtn label={"Copy"} padding={"0.05rem 0.3rem"} mdFontSize={"0.7rem"} endIcon={<ForwardIcon style={{ paddingLeft: "-1rem", fontSize: "1.1rem" }} />} />
-                            {/* <ArrowBtn label={""} padding={"0px 7px"} endIcon={<ForwardIcon />} /> */}
                             </Box>
-
                         </Grid>
 
                         <Grid item sm={10.5} md={10.5}>
