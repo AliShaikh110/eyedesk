@@ -1,6 +1,6 @@
 import { Grid, Stack } from "@mui/material";
 import React from "react";
-import TextFieldInp from "../MiniComp/TextFieldInp";
+import TextFieldInp from "./TextFieldInp";
 
 function InpLabHistory({label, sideLabel}) {
 

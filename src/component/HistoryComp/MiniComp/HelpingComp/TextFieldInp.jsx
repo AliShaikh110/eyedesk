@@ -15,7 +15,7 @@ function TextFieldInp({
 return(
     <>
         <TextField fullWidth 
-        InputLabelProps={{sx:{fontSize:{sm :"0.9rem", lg: "0.85rem"}  }}}
+        InputLabelProps={{sx:{fontSize:{sm :"0.9rem", lg: "0.85rem"}, marginTop:"0.25rem"  }}}
          id="outlined-basic" size={size} label={label} variant="outlined" disabled={disabled}
             sx={{width:{width},
             fontSize:{fontSize},

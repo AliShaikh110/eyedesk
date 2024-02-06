@@ -24,6 +24,7 @@ import SphPositive from "./component/Sph/SphPositive";
 import { FourColLayout } from "./Refraction/PrimaryLayout";
 import { VisualAcuityV3 } from "./Refraction/UiLayout";
 import { Refraction } from "./RefractionComponent/Main";
+import EyeTemplate from "./component/EyeTemplate/Main/Main";
 
 
 
@@ -58,7 +59,8 @@ function App() {
       {/* <SecondUcva /> */}
       {/* <FourColLayout /> */}
       {/* <VisualAcuityV3 /> */}
-      <Refraction />
+      {/* <Refraction /> */}
+      <EyeTemplate />
       
       
     </>
