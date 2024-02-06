@@ -4,7 +4,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
-export default function SelectAutoWidth({
+export function SelectInp({
   selectInpLabel,
   height,
   paddingTop,
@@ -23,7 +23,7 @@ export default function SelectAutoWidth({
   return (
     <div>
       <FormControl sx={{ minWidth: "100%" }}>
-        <InputLabel  sx={{width:"100%",fontSize:{md:mdFontSize, lg:lgFontSize}}}size='small' id="demo-multiple-name-label" >{selectInpLabel}</InputLabel>
+        <InputLabel style={{fontSize:{sm:"0.9rem", md:"0.85rem"}, marginTop:"0.25rem"}}  sx={{width:"100%",fontSize:{md:mdFontSize, lg:lgFontSize}}}size='small' id="demo-multiple-name-label" >{selectInpLabel}</InputLabel>
         <Select
           labelId="demo-simple-select-autowidth-label"
           id="demo-simple-select-autowidth"
@@ -32,7 +32,7 @@ export default function SelectAutoWidth({
           autoWidth
           label={labelSpace}
           size='small' 
-          sx={{bgcolor:bgcolor,minWidth:"0px", width:{width}}}
+          sx={{bgcolor:bgcolor,minWidth:"0px", width:{width},}}
           
           
           

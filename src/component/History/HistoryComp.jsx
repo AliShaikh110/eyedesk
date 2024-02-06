@@ -16,12 +16,12 @@ function HistoryComp() {
                 <Stack alignItems={"center"} justifyContent={"center"} paddingTop={{ sm: "1.5rem", md: "1rem" }}>
                     <Grid container rowSpacing={{ sm: 1.5 }}>
                         <Grid item sm={12} md={1} lg={1} alignItems={"center"} display={"flex"}>
-                            <Typography marginBottom={{ sm: "-0.5rem" }} color={"rgba(55, 55, 55, 1)"} sx={{ fontSize: "0.9rem" }}>Visit :</Typography>
+                            <Typography marginBottom={{ sm: "-0.5rem" }} color={"rgba(55, 55, 55, 1)"} sx={{ fontSize: "0.82rem", fontWeight:"550" }}>Visit :</Typography>
                         </Grid>
                         <Grid item sm={9} md={6.5} lg={5.5} justifyContent={"center"} alignItems={"center"} display={"flex"}>
                             <Grid container >
                                 <Grid item md={4}>
-                                    <HistoryBtn label={"General Checkup"} />
+                                    <HistoryBtn  label={"General Checkup"} />
                                 </Grid>
                                 <Grid item md={4}>
                                     <HistoryBtn label={"Routine Checkup"} />
@@ -101,7 +101,7 @@ function HistoryComp() {
 
                 <Grid container columnSpacing={"2.5rem"} rowSpacing={{ sm: 1.5, md: 0.2 }} marginTop={{ sm: "1.5rem", md: "1.5rem" }} >
                     <Grid item md={12} sm={2} >
-                        <Typography marginBottom={{ sm: "-0.4rem" }} fontSize={"1rem"}>Name</Typography>
+                        <Typography marginBottom={{ sm: "-0.4rem" }}sx={{fontSize:"0.82rem", fontWeight:"550"}} >Name</Typography>
 
                     </Grid>
                     <Grid item md={1.2} sm={9}>
@@ -117,17 +117,17 @@ function HistoryComp() {
                         <SelectInp fontSize={"0.9rem"} bgcolor={"white"} labelSpace={"Duration Unit"} selectInpLabel={"Duration Unit"} />
                     </Grid>
                     <Grid item md={2.7} sm={6} >
-                        <TextFieldInp mdFontSize={"0.7rem"} lgFontSize={"0.9rem"} backgroundColor={"white"} labelSpace={"Comment"} label={"Comment"} />
+                        <TextFieldInp mdFontSize={"0.9rem"} lgFontSize={"0.9rem"} backgroundColor={"white"} labelSpace={"Comment"} label={"Comment"} />
                     </Grid>
                 </Grid>
 
                 {/* *******Viatl and anthropometry signs********* */}
 
-                <Grid container columnSpacing={2} rowSpacing={1.5} marginTop={{ sm: "1.5rem", md: "1rem", lg: "0.2rem" }} paddingBottom={"1rem"} sx={{ width: "100%", boxSizing: "border-box" }}>
+                <Grid container columnSpacing={2} rowSpacing={1.5} marginTop={{ sm: "1.5rem", md: "1.25rem", lg: "1.25rem" }} paddingBottom={"1rem"} sx={{ width: "100%",  }}>
                     <Grid item md={6} sm={12}>
 
                         <Grid container rowSpacing={{ sm: 1.5, md: 2.5, lg: 3 }} columnSpacing={{ sm: "2.5rem", md: 3, lg: 5 }} paddingRight={{ md: "1.5rem", lg: "2.9rem" }}>
-                            <Grid item md={12} sm={12} marginBottom={{ sm: "-0.7rem" }}><Typography variant="subtitle1">Vital Signs</Typography></Grid>
+                            <Grid item md={12} sm={12} sx={{fontSize:"0.82rem", fontWeight:"550"}} marginBottom={{ sm: "-0.7rem" }}><Typography sx={{fontSize:"0.82rem", fontWeight:"550"}}>Vital Signs</Typography></Grid>
 
                             <Grid item md={6} sm={6}>
                                 <InpLabHistory sideLabel={"°C"} label={"label"} />
@@ -150,10 +150,10 @@ function HistoryComp() {
 
                         </Grid>
                     </Grid>
-                    <Grid item md={6} sm={12}>
+                    <Grid item md={6} sm={12} >
 
-                        <Grid container rowSpacing={{ sm: 1.5, md: 2.5, lg: 3 }} columnSpacing={{ sm: "2.5rem", md: 3, lg: 5 }} marginTop={{ sm: "0.5rem" }} paddingLeft={{ md: "1.5rem", lg: "2.9rem" }}>
-                            <Grid item md={12} marginBottom={{ sm: "-0.7rem" }} sm={12}><Typography variant="subtitle1">Anthropometry</Typography></Grid>
+                        <Grid container rowSpacing={{ sm: 1.5, md: 2.5, lg: 3 }} columnSpacing={{ sm: "2.5rem", md: 3, lg: 5 }}  paddingLeft={{ md: "1.5rem", lg: "2.9rem" }}>
+                            <Grid item md={12}  marginBottom={{ sm: "-0.7rem" }} sm={12}><Typography sx={{fontSize:"0.82rem", fontWeight:"550"}} >Anthropometry</Typography></Grid>
 
 
                             <Grid item md={6} sm={6}>
